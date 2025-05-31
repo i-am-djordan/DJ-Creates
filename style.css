@@ -1,3 +1,7 @@
+html{
+    scroll-behavior: smooth;
+}
+
 body{
     background-color: #22223b;
     font-family: Arial, sans-serif;
@@ -8,11 +12,27 @@ body{
 header {
     background-color: #4a4e69;
     color: white;
+    border: black 2px solid;
     text-align: left;
     padding: 10px 0;
     padding-top: 20px; margin-top: -50px;
     padding-left: 50px; margin-left: -50px;
     padding-right: 50px; margin-right: -50px;
+}
+
+.fa{
+    font-size: fa-10x;
+    color: #f2e9e4;
+    margin-right: 20px;
+    --fa-display: inline-block;
+    --fa-align-items: right;
+    float: right;
+    text-decoration: none;
+}
+
+.fa:hover {
+    color: #c9ada7; /* change color on hover */
+    cursor: pointer;
 }
 
 .hidden {
@@ -35,7 +55,12 @@ h1, h2, h3 {
 }
 
 .hheader{
-    text-align: center;
+    text-align: right;
+}
+
+.hhheader{
+    text-align: right;
+    margin-right: 50px;  
 }
 
 
@@ -49,8 +74,8 @@ h1, h2, h3 {
 
 .sidebar {
   position: fixed;
-  top: 100px; /* Adjusted to start below the header */
-  left: -300px;
+  top: 81px;
+  left: -250px;
   width: 120px;
   height: 100%;
   background-color: #40435b;
@@ -58,18 +83,13 @@ h1, h2, h3 {
   padding: 1rem;
   transition: left 0.3s ease;
   z-index: 1000;
-  display: flex;
-  flex-direction: column;
-  justify-content: center; 
-  align-items: center; 
-  text-align: center;
-  
 }
 
 .sidebar ul {
   list-style: none;
   padding: 0;
-  margin-top: -450px;
+  margin-top: 0;
+
 }
 
 .sidebar a {
@@ -90,10 +110,21 @@ h1, h2, h3 {
   color: #c9ada7; /* change color on hover */
 }
 
-#page-content {
+.page-content {
   transition: transform 0.3s ease;
 }
 
 .shifted {
-  transform: translateX(150px); /* same width as your sidebar */
+  transform: translateX(130px); /* same width as your sidebar */
 }
+
+.cshifted{
+  transform: translateX(-10px); /* same width as your sidebar */
+}
+
+.welcome{
+    text-align: center;
+    margin-top: 20px;
+}
+
+
