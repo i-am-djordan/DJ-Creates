@@ -1,5 +1,7 @@
 html{
     scroll-behavior: smooth;
+    max-width: 100%;
+    overflow-x: hidden;
 }
 
 body{
@@ -82,7 +84,6 @@ li{
 a{
     color: #f2e9e4;
     text-decoration: none;
-    display: block;
     font-weight: bold;
 }
 
@@ -96,10 +97,8 @@ footer {
     text-align: center;
     padding-left: 50px; margin-left: -50px;
     padding-right: 50px; margin-right: -50px;
-    margin-bottom: -100px;
+    margin-bottom: -50px;
 }
 
-footer a{
-    margin-bottom: 10px;
-}
+
 
