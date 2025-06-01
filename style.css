@@ -54,7 +54,7 @@ img {
 
 p {
     color: #f2e9e4;
-    line-height: 1.6;
+    line-height: 1.8;
 }
 
 h1, h2, h3 {
@@ -68,15 +68,16 @@ h1, h2, h3 {
 
 nav{
     text-align: center;
+    
 }
 
-ul{
+.navbar{
     list-style-type: none;
     padding: 0;
     margin: 0;
 }
 
-li{
+.navbar li{
     display: inline-block;
     padding: 10px;
 }
@@ -91,6 +92,15 @@ a:hover {
   color: #c9ada7; /* change color on hover */
 }
 
+.pricing-list{
+    color: #f2e9e4;
+    padding-left: 1.5rem;
+}
+
+.pricing-list li{
+    line-height: 1.8;
+}
+
 footer {
     background-color: #4a4e69;
     border: black 2px solid;
@@ -99,6 +109,5 @@ footer {
     padding-right: 50px; margin-right: -50px;
     margin-bottom: -50px;
 }
-
 
 
